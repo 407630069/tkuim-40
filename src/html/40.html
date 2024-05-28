@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>系慶活動</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover; 
+            background-position: center;
+            color: #383838f3; /* 更改文字顏色 */
+            font-family: 'Times New Roman'; /* 更改字體 */
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #c8f0f7;
+            position: relative;
+            background-image: url("1.png");
+            background-size:100%100%; /* 讓背景圖片完全符合頁面 */
+            background-position: center top;
+        }
+        .header img {
+            width: 500px;
+            height: auto;
+        }
+        .content {
+            margin: 20px;            
+            background-size: cover;
+            color: #000000; /* 更改文字顏色 */
+        }
+        .buttons {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            gap: 10px;           
+        }
+        .select {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            color: rgb(5, 5, 5);
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            cursor: pointer;
+        }
+        video {
+            float: right;
+            margin-top: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">        
+        <img src="LOGO-40-FINAL-01.png">
+         <h1>淡江大學資管系40周年系慶</h1>
+         <h3>活動時間：113年10月26日(星期六)9:00-16:00</h3>
+         <h3>活動地點：淡江大學-淡水校園-學生活動中心</h3>
+        <div class="buttons">
+            <button class="select" onclick="location.href='40.html'">首頁</button>
+            <button class="select">活動報名</button>
+            <button class="select" onclick="location.href='mail.html'">公開信</button>
+            <button class="select" onclick="location.href='donate.html'">捐款方式</button>
+            <button class="select" onclick="location.href='park.html'">停車資訊</button>
+        </div>
+    </div>
+    <div class="content">
+        <h2>活動介紹</h2>
+        <p>淡江大學資管系自創立以來，今年迎來了40周年的重要里程碑。</p>
+        <p>在過去的四十年中，資管系培育了無數優秀的資訊管理專業人才。</p>
+        <p>為了慶祝這個特別的時刻，我們計劃舉辦系慶餐會慶祝活動，藉此凝聚系友，並為未來系上的發展奠定基礎。</p>
+        <video width="400" height="300" controls>
+            <source src="淡江資管40周年慶宣傳影片1.mp4" type="video/mp4">
+            您的瀏覽器不支援影片播放。
+        </video>
+    </div>
+</body>
+</html>

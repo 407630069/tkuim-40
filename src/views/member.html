@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button value="0"></button>
+    <button value="1"></button>
+
+    <dialog  id="infoModal">
+        <p id="content"></p>
+        <button id="close">close</button>
+    </dialog>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+
+    <script>
+
+        const leader = ['leader1','leader2'];
+
+        const member = [['m11','m12'],['m21','m22']];
+
+        var my_tag = document.getElementsByTagName('button');
+
+        for(let idx=0;idx<leader.length;idx++){
+
+            my_tag[idx].textContent=leader[idx];
+
+        }
+
+        let infoModal = document.querySelector("#infoModal");
+        let close = document.querySelector("#close");
+
+        $('button').click(function(){
+
+            var temp = $(this).val();
+            var all_member = member[temp];
+            
+            var rlt ="";
+            for(let text_idx=0;text_idx<all_member.length;text_idx++){
+
+                rlt=rlt.concat("<br>",all_member[text_idx]);
+
+            }
+
+            document.getElementById('content').innerHTML=rlt;
+            infoModal.showModal();
+
+        });
+
+        close.addEventListener("click",function(){
+            infoModal.close();
+        });
+
+    </script>
+
+    
+</body>
+</html>

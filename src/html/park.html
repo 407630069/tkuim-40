@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d1cfcf; /* 更改背景顏色 */
+            background-size: cover; 
+            background-position: center;
+            color: #000000; /* 更改文字顏色 */
+            font-family: 'Times New Roman'; /* 更改字體 */
+            background-image: url("1.png");
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #c8f0f7;
+            position: relative;
+        }
+        .header img {
+            width: 500px;
+            height: 250px;
+        }
+        .buttons {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            display: flex;
+            gap: 10px;            
+        }
+        .select {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .content {
+            margin: 20px;            
+            background-size: cover;
+            text-align: center; /* 讓文字置中 */
+        }
+        .content img {
+            cursor: pointer; /* 讓滑鼠指標變成手指形狀 */
+            width: 500px; /* 更改圖片大小 */
+            height: auto; /* 讓圖片的高度自動調整以保持比例 */
+        }
+        .content p {
+            font-size: 24px; /* 更改文字大小 */
+        }
+        .content i {
+            font-size: 24px; /* 更改圖示大小 */
+        }
+        .logo {
+            width: 350px; /* 更改 logo 圖片大小 */
+            height: auto; /* 讓 logo 圖片的高度自動調整以保持比例 */
+            display: block;
+            margin: auto;
+        }
+        .event-info {
+            background-color: #f0f0f0; /* 更改區塊的背景顏色 */
+            padding: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <img src="LOGO-40-FINAL-01.png" alt="Logo" class="logo"> 
+    <div class="content">        
+        <h1>
+            <a href="#">入校停車資訊</a>
+        </h1>
+        <p>
+        <i class="fas fa-exclamation-circle"></i>  
+        <span style="color: #ff0000; font-weight: 800;">本校自112年8月1日起汽車進入本校臨停時需繳納停車費！</span>       
+        </p>
+        <a href="https://agox-system.tku.edu.tw/VE/t_park.aspx"><img src="parking.png" alt="你的圖片"></a> <!-- 讓圖片有點擊前往網址的功能 -->
+        <div class="event-info">
+            <h1>淡江大學資管系40周年系慶</h1>
+            <h3>活動時間：113年10月26日(星期六)9:00-16:00</h3>
+            <h3>活動地點：淡江大學-淡水校園-學生活動中心</h3>
+        </div>
+        <div class="buttons">
+            <button class="select" onclick="location.href='40.html'">首頁</button>
+            <button class="select">活動報名</button>
+            <button class="select" onclick="location.href='mail.html'">公開信</button>
+            <button class="select" onclick="location.href='donate.html'">捐款方式</button>
+            <button class="select" onclick="location.href='park.html'">停車資訊</button>
+        </div>    
+    </div>
+</body>
+</html>
